@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos fora do main</title>
+<style>
+
+body {background-image: url(images.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      text-align: center;}
+
+p {margin-left: 50px;
+   margin-right: 50px;}
+
+h1 {margin: 50px 50px;}
+
+#onediv, .twodiv, .tridiv {max-width: 560px;
+                           margin: auto;}
+
+.divone {position: relative;
+         background-color: black;
+         margin: 50px 0px 50px 0px;
+         padding-bottom: 56.25%;}
+
+.divone > video {position: absolute;
+                 width: 100%; height: 100%;
+                 top: 0%; left: 0%;}
+
+.divtwo {position: relative;
+         background-color: purple;
+         margin: 50px -394px 50px -394px;
+         padding: 28px;
+         padding-bottom: 52%;}
+
+.divtwo > video {position: absolute;
+                 background-color: black;
+                 width: 41.50%; height: 100%;
+                 top: 0%; left: 29%;}
+                
+.divtri {position: relative;
+         background-color: blue;
+         margin: 50px -394px 50px -394px;
+         padding-bottom: 65%;}
+
+.divtri > video {position: absolute;
+                 background-color: black;
+                 width: 41%; height: 85%;
+                 top: 7%; left: 30%; }
+
+@media (max-width: 320px){.divone{margin: 50px -8px 50px -8px;
+                                  padding-bottom: 60%;}}
+
+@media (max-width: 580px){.divtwo{margin-left: -8px;
+                                  margin-right: -8px;
+                                  padding-bottom: 49.50%;}
+                          .divtwo > video{width: 96%;
+                                          left: 2%;}
+                                .divtri{margin: 50px -8px 50px -8px;}
+                                .divtri > video{width: 93%;
+                                                left: 3%;}}
+
+</style>
+</head>
+<body>
+
+<h1>Vídeos fora do main</h1>
+
+<p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem vel quia eaque earum nemo facere voluptates repellat tempora sed non numquam, enim sint accusantium. Culpa dolor nesciunt excepturi delectus possimus.
+</p>
+
+<div id="onediv">
+    <div class="divone">
+        <video preload="metadata" poster="familia.jpg" muted controls>
+            <source src="Meu casal.mp4" type="video/mp4">
+            <source src="Meu-casal.m4v" type="video/m4v">
+            <source src="Meu-casal.ogv" type="video/ogv">
+            <source src="Meu-casal.webm" type="video/webm">
+            <p>Seu navegador não é compatível com este navegador, baixe o arquivo</p>
+            <a href="Meu casal.mp4" download="Lulério.mp4"></a>
+        </video>
+    </div>
+</div>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quidem, obcaecati eligendi enim veniam adipisci nam libero quia temporibus necessitatibus iste delectus neque facilis, magnam minus iure saepe? Delectus, consequuntur?
+</p>
+
+<div class="twodiv">
+    <div class="divtwo">
+        <video preload="metadata" poster="familia.jpg" muted controls>
+            <source src="Meu casal.mp4" type="video/mp4">
+            <source src="Meu-casal.m4v" type="video/m4v">
+            <source src="Meu-casal.ogv" type="video/ogv">
+            <source src="Meu-casal.webm" type="video/webm">
+            <p>Seu navegador não é compatível com este navegador, baixe o arquivo</p>
+            <a href="Meu casal.mp4" download="Lulério.mp4"></a>
+        </video>
+    </div>
+</div>
+
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta consequatur veritatis dolor est porro praesentium tempore, possimus numquam, mollitia architecto dolores animi nulla voluptatibus molestiae repellendus. Tenetur, voluptatem recusandae!
+</p>
+
+<div class="tridiv">
+    <div class="divtri">
+        <video preload="metadata" poster="familia.jpg" muted controls>
+            <source src="Meu casal.mp4" type="video/mp4">
+            <source src="Meu-casal.m4v" type="video/m4v">
+            <source src="Meu-casal.ogv" type="video/ogv">
+            <source src="Meu-casal.webm" type="video/webm">
+            <p>Seu navegador não é compatível com este navegador, baixe o arquivo</p>
+            <a href="Meu casal.mp4" download="Lulério.mp4"></a>
+        </video>
+    </div>
+</div>
+
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ea, veniam, possimus, nam repellat vitae quaerat quia nesciunt nostrum laborum est beatae! Ipsa saepe laborum suscipit. Consequatur adipisci quam vel.
+</p>
+    
+</body>
+</html>

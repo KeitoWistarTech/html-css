@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseguindo em 3 2...</title>
+<style>  
+     
+* {margin: 0;
+   padding: 0;}
+
+body {background-color: black;}
+
+.menu {width: 100vw;
+       background-color: black; color: white;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       align-items: center;}
+
+.menu ul {list-style: none;
+          margin-top: 2%;}
+
+.menu ul li {width: 170px;
+             border: 1px solid white;
+             height: 50px; 
+             line-height: 50px;
+             text-align: center;
+             float: left;
+             background-image: linear-gradient(purple,blue,red,orange,yellow,green);
+             background-clip: text;
+             -webkit-background-clip: text;
+             color: transparent;}
+
+.menu ul li:hover {outline: 1px solid green;
+                   box-shadow: 1px 1px 5px 5px #00c200;}
+
+.menu ul ul {display: none;
+             margin: 0px;}
+
+.menu ul li:hover > ul {display: block;}
+
+.menu ul ul ul {margin-left: 170px;
+                position: absolute;
+                top: 12.6%;}
+
+a {text-decoration: none;
+   background-image: linear-gradient(to top,yellow 16.67%, orange 16.67%,red 66.66%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;}
+
+</style>
+</head>
+<body>
+
+<div class="menu">
+    <ul>
+        <li>TREINANDO</li>
+        <li>DROPDOWN</li>
+        <li>MENU
+            <ul>
+                <li><a href="https://github.com/KeitoWistarTech">MEU GITHUB
+                </a></li>
+                <li><a href="https://www.instagram.com/11kitcat13/">MEU INSTA
+                </a></li>
+                <li><a href="https://www.linkedin.com/onboarding/start/people-you-may-know/new/">MEU LINKEDIN
+                </a></li>
+            </ul>
+        </li>
+        <li>CONTATO
+            <ul>
+                <li>TESTANDO 1
+                    <ul>
+                        <li>FUNCIONANDO 1</li>
+                        <li>FUNCIONANDO 2</li>
+                        <li>FUNCIONANDO 3</li>
+                    </ul>
+                </li>
+                <li>TESTANDO 2</li>
+                <li>TESTANDO 3</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+*{margin: 0px;}
+
+:root {--pre: black; 
+       --brual: white;
+       --verde: #013301; 
+       --claro: #016901; 
+       --rim:#02c202;}
+
+body {background-color: #fdfdaf;}
+
+header {background-image: linear-gradient(to top,#013301,
+        #016901,#02c202);
+        margin-bottom: 20px} 
+
+header h1 {text-align: center; 
+           padding-top: 7px;}
+
+header .hi {text-align: center; 
+            font-family:'Edu TAS Beginner', cursive; 
+            padding-bottom: 7px;
+            font-size: 1.5em;
+            margin-bottom: 7px;}
+
+nav {padding: 10px; 
+     padding-left: 0px; 
+     background-color: var(--verde);}
+
+nav a {padding: 10px; 
+       text-decoration: none; 
+       color: var(--brual); 
+       font-family: 'Aclonica', sans-serif;}
+
+nav a:hover {background-color: bisque; color: black;}
+
+main {background-color: var(--claro); 
+      min-width: 265px; 
+      max-width: 600px; 
+      margin: auto;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 20px; overflow: hidden;}
+
+main p {margin-top: 10px; 
+        margin-bottom: 10px; 
+        text-align: justify;}
+
+#titupinci {background-color: var(--brual);
+            font-size: 28px; 
+            width: 100%;
+            text-align: center;
+            border-radius: 20px;
+            padding-top: 2px;}
+
+main .h2 {background-color: var(--brual); 
+          border-radius: 15px;
+          padding-left: 10px; padding-right: 0px;}
+
+main .h22 {background-color: var(--brual);
+           border-radius: 15px;
+           min-width: 260px;
+           padding-left: 10px;
+           padding-right: 10px; 
+           max-width: 335px;}
+
+.pvids {max-width: 500px; margin: auto;}
+
+.conteiner {width: 100%;
+            padding-top: 50%; padding-bottom: 25%;
+            position: relative;}
+
+.conteiner video {position: absolute;
+                  width: 100%; height: 100%; 
+                  top: 0; left: 0;}
+
+.emiti {width: 100%;}
+
+.bug {display: block; margin: auto;}
+
+aside {background-color: bisque;
+       margin: 20px 5px 20px 5px;
+       padding: 1px 5px 1px 8px;}
+       
+abbr {text-decoration: none;}
+
+.oi {background-color: var(--verde);
+     margin: -10px -5px 12px -8px;
+     padding: 5px;color: var(--brual);border-top-left-radius: 8px;border-top-right-radius: 8px;}
+
+footer {background-color: var(--verde);
+        padding: 10px;
+        color: var(--brual);
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+a {text-decoration: none;}

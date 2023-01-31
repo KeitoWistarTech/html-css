@@ -1,0 +1,25 @@
+@charset "utf";
+
+body {background-color: #EDAA25}
+
+*{margin: 0;}
+
+h1 {background-color: #C43302; 
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 12px;}
+
+.ops {background-color: #C43302; 
+      border: 8px outset #010221; 
+      list-style: none;}
+
+.ops li {display: inline;}
+
+.ops li a {padding: 8px;
+           text-decoration: none; 
+           color: black;
+           display: inline-block;}
+
+.ops li a:hover {background-color: #010221;
+                 color: white;}
+

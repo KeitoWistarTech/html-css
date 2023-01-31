@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {background-image: linear-gradient(blue,white,yellow,green,#2e0c0c);
+      background-attachment: fixed;}
+
+h1#principal {background-color: white; color: black;
+              width: 30px; 
+              padding: 10px; 
+              margin: auto;}
+              
+.subtitulo, .subtitulo2 {color: white; 
+                         text-shadow: 2px 2px 2px black;}
+
+h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+p {text-align: justify; 
+   text-indent: 20px;}
+
+h2 {font-family:  monospace;}
+
+.top1 {color: red;}
+
+.top2{color:#ffd900}
+
+.top3{color: #012e01;
+      text-shadow: 2px 2px 2px white;}
+
+.top22 {color: white;}
+
+.top23 {color: #5858c0;}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {background-color: #b9b9b7;}
+
+main {background-color: #FA7F08;
+      text-align: justify;
+      border-radius: 10px;
+      width: 800px;
+      padding: 10px;
+      margin: auto;
+      box-shadow: 5px 5px 5px #22BABB;}
+
+p {text-align: justify;}
+
+h2 {color: #9EF8EE;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;}
+
+.pagnext {font-size: 2em;}

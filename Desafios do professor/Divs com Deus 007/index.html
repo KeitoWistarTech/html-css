@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrospace</title>
+<style>
+
+#conteiner {width: 600px; 
+            margin: auto;}
+
+.space {position: relative; 
+        width: 600px;}
+
+.between {position: absolute; 
+          width: 100%;}
+        
+.astro {position: relative; 
+        height: 250px;}
+.nauta {position: absolute; 
+        width: 250px; height: 100%; 
+        right: 35%; top: 20%;}
+            
+main {background-color: blueviolet;
+      margin: auto;   
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      max-width: 500px;
+      height: 1000px;}
+
+main > header {background-color: blue;
+               text-align: center;
+               display: inline-block;
+               border-top-left-radius: 10px;
+               margin: auto;
+               border-top-right-radius: 10px;
+               padding: 20px;}
+
+main header a {color: black;
+               margin: 50.6px;
+               text-decoration: none;}
+
+@media (max-width: 500px){a{display: grid;
+                            grid-auto-flow: column;}}
+
+main header a:hover {color: aliceblue;}
+
+</style>
+</head>
+<body>
+
+<h1>Treinando um hearder dentro do main</h1>
+
+<main>
+    <header>
+        <a href="#">Comida</a>
+        <a href="#">Animais</a>
+        <a href="#">Filmes</a>
+    </header>
+</main>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore tempora, architecto illo quae optio ullam perspiciatis nisi ipsa et delectus! Facilis quia veniam sint exercitationem soluta temporibus impedit numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero doloremque vel, magni ratione velit perferendis illum suscipit distinctio nesciunt neque iusto voluptatem fuga atque, dolores ea facilis laborum maxime?
+    </p>
+
+<h1>Tenho que colocar esse astronauta dentro desta imagem</h1>
+
+    <div id="conteiner">
+        <div class="space">
+            <img class="between" src="Arquivos/espaco.jpg">
+            <div class="astro">
+            <img class="nauta" src="Arquivos/astronauta.png">
+            </div>
+        </div>
+    </div>
+
+<p>Conseguir...</p>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos no main</title>
+<style>
+
+body {background-image: url(folha.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;}
+
+h1 {text-align: center;}
+
+main {background-color: black;
+      color: white;
+      max-width: 600px;
+      min-width: 250px;
+      border-radius: 10px;
+      margin: auto;
+      padding: 20px;}
+
+.divs {position: relative;
+        background-color: green;
+        width: 100%;
+        margin: 50px 10px 50px 0px;
+        padding-bottom: 56.25%;}
+
+.divs > video {position: absolute;
+                width: 100%; height: 100%;
+                top: 0%; left: 0%;}
+
+.twodivs {position: relative;
+           background-color: #ffbb00;
+           margin: 50px -20px 50px -20px;
+           padding-bottom: 56.25%;}
+
+.twodivs > video {position: absolute;
+                  background-color: blue;
+                  width: 94%; height: 100%;
+                  top: 0%; left: 3%;}
+
+.tridivs {position: relative;
+          background-color: red;
+          padding: 5px;
+          margin: 50px -20px 50px -20px;
+          padding-bottom: 61.90%;}
+
+.tridivs > video {position: absolute;
+                   background-color: black;
+                   width: 94%; height: 90%;
+                   top: 5%; left: 3%;}
+    
+@media (max-width: 320px){main{padding: 10px;}
+                              .twodivs{margin: 50px -10px 50px 
+                                               -10px;}
+                              .twodivs > video{left: 3%;}
+                                .tridivs{margin: 50px -10px 50px 
+                                                 -10px;}}
+
+@media (max-width: 560px){.twodivs{padding-bottom: 57.50%;}
+                            .tridivs{padding-bottom: 63%;}}
+
+</style>
+</head>
+<body>
+
+<h1>Vídeos no main</h1>
+
+<main>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, atque ex aliquid qui quasi temporibus eos aliquam aspernatur, est possimus necessitatibus. Esse velit ut laudantium. Sed illum laudantium consequatur ab.
+</p>
+
+<div class="divs">
+    <video width="560" height="315" controls muted preload="metadata" poster="familia.jpg">
+        <source src="Meu casal.mp4" type="video/mp4">
+        <source src="Meu-casal.m4v" type="video/m4v">
+        <source src="Meu-casal.ogv" type="video/ogv">
+        <source src="Meu-casal.webm" type="video/webm">
+    <p>Seu navegador não suporta este tipo de arquivo</p>
+        <a href="Meu casal.mp4" download="Valério&Lucrécio.mp4">Baixar vídeo</a>
+    </video>
+</div>
+
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque velit non nam, cum aliquam libero qui corrupti voluptatibus tenetur eveniet quidem dolore magni unde odit esse dolores numquam? Ad?
+</p>
+
+<div class="twodivs">
+    <video controls muted preload="metadata" poster="familia.jpg">
+        <source src="Meu casal.mp4" type="video/mp4">
+        <source src="Meu-casal.m4v" type="video/m4v">
+        <source src="Meu-casal.ogv" type="video/ogv">
+        <source src="Meu-casal.webm" type="video/webm">
+    <p>Seu navegador não suporta este tipo de arquivo</p>
+        <a href="Meu casal.mp4" download="Valério&Lucrécio.mp4">Baixar vídeo</a>
+    </video>
+</div>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos adipisci maiores laborum officia neque alias, commodi vero explicabo perspiciatis aliquid. Hic vitae placeat cupiditate, exercitationem at aperiam beatae maiores?
+</p>
+
+<div class="tridivs">
+    <video controls muted preload="metadata" poster="familia.jpg">
+        <source src="Meu casal.mp4" type="video/mp4">
+        <source src="Meu-casal.m4v" type="video/m4v">
+        <source src="Meu-casal.ogv" type="video/ogv">
+        <source src="Meu-casal.webm" type="video/webm">
+    <p>Seu navegador não suporta este tipo de arquivo</p>
+        <a href="Meu casal.mp4" download="Valério&Lucrécio.mp4">Baixar vídeo</a>
+    </video>
+</div>
+
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam deleniti rem dolorem reprehenderit ipsum quos ex in labore alias voluptatibus mollitia rerum, nisi libero ab repellat, nostrum ratione minima assumenda?
+</p>
+
+</main>
+    
+</body>
+</html>
