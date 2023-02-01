@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+*{margin: 0px;}
+
+:root {--divs: #b7b7fd;
+       --uniao: #02025f;
+       --h2: red;
+       --extras: pink;}
+
+body {background-image: 
+      linear-gradient(to top,black,#02025f,blue,#3636fc);
+      background-attachment: fixed;}
+
+header {background-color: #4f4ffa;  
+        text-align: center; 
+        padding-top: 12px;}
+
+header p {padding-bottom: 8px; 
+          padding-top: 1px;}
+
+nav {padding-left: 2px; 
+     padding-top: 0px; 
+     padding-bottom: 0px; 
+     text-align: left;}
+
+nav a {text-decoration: none; 
+       color: var(--divs); 
+       padding: 8px; 
+       display: inline-block; 
+       text-align: justify;}
+
+nav a:hover {background-color:#bdbdfd; 
+             color:#02025f; 
+             box-shadow: 1px 1px 10px 10px white;
+             transition: 1s;}
+
+main {background-color: var(--divs);
+      min-width: 280px;
+      max-width: 800px;
+      margin: auto; 
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      padding: 20px;}
+
+main p {margin-top: 10px; 
+        margin-bottom: 10px; 
+        text-indent: 22px;
+        text-align: justify;}
+
+main h1 {background-color: var(--uniao); 
+         width: 280px;   
+         text-align: center;
+         border-radius: 15px;}
+
+main h2 {background-color: var(--h2); 
+         text-align: center; 
+         border-radius: 15px;}
+
+h3 {background-color: var(--h2); 
+    text-align: center; 
+    border-radius: 4px;}
+
+img {width: 100%;}
+
+.bug {max-width: 350px; 
+      display: block; 
+      margin: auto;}
+
+aside > ul {columns: 2; 
+            list-style-position: inside;}
+
+li {margin-top: 10px;}
+
+abbr {text-decoration: none;}
+
+main strong {background-color: var(--uniao);
+             color: var(--divs);
+             font-weight: bold;
+             padding-top: 1px;
+             padding-bottom: 1px;
+             font-size: 13px;}
+
+div.vids {background-color: var(--uniao); 
+          margin: 0px -20px 0px -20px;
+          padding: 20px; 
+          position: relative;
+          padding-bottom: 50%;}
+
+div.vids > iframe {position: absolute;
+                   top: 5%; left: 5%;
+                   width: 90%; height: 90%;}
+
+aside {background-color: var(--extras); 
+       padding: 6px;
+       border-radius: 4px;
+       margin-top: 20px;}
+
+footer {background-color: var(--divs);
+        color: #131212; 
+        height: 25px; 
+        text-align: center; 
+        padding-top: 8px;}
+
+main a {text-decoration: none;}
+
+main a:hover {text-decoration: underline;}
