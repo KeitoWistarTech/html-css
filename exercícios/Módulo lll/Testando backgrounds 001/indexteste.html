@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando posicionamentos</title>
+
+<style>
+
+header {position: relative;
+        height: 80px;
+        background-color: greenyellow;
+        margin-bottom: 30px;
+        margin: -10px -10px 30px -10px;}
+
+.img {position: absolute;
+      width: 60px; height: 60px;
+      border: 5px solid black;
+      left: 10%; top: 6%;}
+
+.natu {position: absolute;
+       width: 60px; height: 60px;
+       border: 5px solid black;
+       left: 20%; top: 6%;}
+       
+.mcdon {position: absolute;
+        width: 60px; height: 60px;
+        right: 15%; top: 12%;}
+
+#conteiner {position: relative;
+            height: 200px;
+            background-color: aqua;}
+
+.conteudo {position: absolute;
+           background-color: blueviolet;
+           width: 100px; height: 100px;
+           right: 0;}
+
+.conteudo2 {position: absolute;
+            background-color: black;
+            width: 100px; height: 100px;
+            left: 0;}
+
+.conteudo3 {position: absolute;
+            width: 500px;
+            height: 100px;
+            background-color: brown;
+            margin: auto;
+            right: 0; bottom: 0;}
+
+#conteiner2 {position: relative;
+             background-color: blueviolet;
+             margin-top: 30px;
+             height: 500px;}
+
+.conteudo1 {position: absolute;
+            width: 200px; height: 200px;
+            background-color: green;
+            left: 0;}  
+
+.conteudo22 {position: absolute;
+             background-color: orangered;
+             width: 100px; height: 100px;
+             right: 0;}
+
+.conteudo33 {position: absolute;
+             background-color: black;
+             width: 100px; height: 360px;
+             right: 20px; bottom: 20px;}
+
+.conteudo44 {position: absolute;
+             background-color: brown;
+             max-width: 500px;
+             right: 0; left: 0;
+             top: 0; bottom: 0;
+             margin: auto}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <img class="img" src="gato.jpg">
+    <img class="natu" src="naturale.jpg">
+    <img class="mcdon" src="mcdonalds.png">
+</header>
+
+<section id="conteiner">
+    <article class="conteudo"></article>
+    <article class="conteudo2"></article>
+    <article class="conteudo3"></article>
+</section>
+
+<section id="conteiner2">
+    <article class="conteudo1"></article>
+    <article class="conteudo22"></article>
+    <article class="conteudo33"></article>
+    <article class="conteudo44"></article>
+</section>
+    
+</body>
+</html>
