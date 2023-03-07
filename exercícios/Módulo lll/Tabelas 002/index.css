@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+body {background-image: linear-gradient(to right,#0c0cc2,#4d4df1,yellow);
+      background-attachment: fixed;}
+
+h1 {font-family: dancing script, cursive;}
+
+p {font-size: 1.2em;}
+
+li {font-size: 1.2em;}
+
+.cor1 {background-color: #ffd000;}
+.cor2 {background-color: black; color: white;}
+.cor3 {background-color: pink;}
+
+caption {background-color: #f5f59e;
+         padding: 10px;
+         font-weight: bolder;
+         width: 770px; 
+         border: 2px solid black;
+         border-bottom: none;
+         font-family: Arial, Helvetica, sans-serif;}
+
+table {border: 2px solid black;
+       margin: auto;
+       background-color: bisque;
+       border-collapse: collapse;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       width: 45%;}
+
+#table2 {width: 48%;
+         position: relative;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.total {width: 50px;}
+
+#filmes {height: 20px; 
+         background-color: red; color: white;}
+
+td {border: 2px solid black;
+    vertical-align: middle; 
+    text-align: center;
+    padding: 10px;}
+
+.linhac1:hover {background-color: #ffd000;}
+.linhac2:hover {background-color: black; color: white;}
+.linhac3:hover {background-color: pink;}
+
+th {font-weight: lighter;
+    padding: 10px;
+    border: 2px solid black;}
+
+thead > tr > th {position: sticky;
+                 top: -1px;
+                 background-color: red;}
+
+thead, tfoot {background-color: red; color: white;
+              height: 80px;}
+
+tr {height: 80px;}
+
+tbody > tr:nth-child(2n){background-color: #aaa8a8;}
