@@ -82,7 +82,8 @@ aside {background-color: bisque;
        margin: 20px 5px 20px 5px;
        padding: 1px 5px 1px 8px;}
        
-abbr {text-decoration: none;}
+abbr {text-decoration: none;
+      color: black;}
 
 .oi {background-color: var(--verde);
      margin: -10px -5px 12px -8px;
@@ -96,3 +97,7 @@ footer {background-color: var(--verde);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
 a {text-decoration: none;}
+
+p > a > abbr , footer > a {color: red;}
+
+p > a > abbr:hover , footer > a:hover {color: white;}

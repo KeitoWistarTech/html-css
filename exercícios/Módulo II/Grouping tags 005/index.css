@@ -2,10 +2,12 @@
 
 a {text-decoration: none; color: black;}
 
+*{margin: 0;
+  padding: 0;}
+
 html, body {background-image:  linear-gradient(pink,yellow);
-            height: 100%; 
-            padding: 0px;
-            margin: 0px;}
+            background-attachment: fixed;
+            height: 80vh;}
 
 body {display: flex;
       flex-direction: column;}
@@ -27,7 +29,7 @@ nav a:hover {text-decoration: underline ;}
 main {background-color: bisque; 
       padding: 10px;
       flex: auto;
-      margin-bottom: 20px;
+      margin-bottom: 500px;
       font-family: 'Gentium Book Plus', serif; box-shadow: 1px 1px 3px black;}
 
 h2 {padding-bottom: 10px;
@@ -43,6 +45,7 @@ article h3 {margin-top: 10px;
       font-family: 'Roboto', sans-serif;}
 
 aside {background-color: #fa5671;
+       margin-top: 10px;
        text-align: center;}
 
 aside a {margin: 30px;}

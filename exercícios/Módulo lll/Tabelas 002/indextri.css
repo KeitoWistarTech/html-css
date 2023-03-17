@@ -1,0 +1,36 @@
+*{margin: 0;
+  padding: 0;}
+
+body {background-image: linear-gradient(to right, blue,yellow);}
+
+div#container {overflow-x: auto;
+               display: grid;
+               place-items: center;}
+
+h1 {text-align: center;
+    margin-top: 50px;}
+
+p {margin: 50px;}
+
+table {border: 2px solid black;
+       font-family: 'Rampart One', cursive;
+       border-collapse: collapse;}
+
+caption {border: 2px solid black;
+         border-bottom: 0;
+         font-family: 'Rye', cursive;
+         background-color: #ff9900;
+         padding: 10px;}
+    
+th, td {border: 2px solid black;
+        padding: 10px;}
+
+td {font-family: 'Rye', cursive;}
+
+col.ctv , #melop {background-color: white;}
+
+col.ccat {background-color: #c0bebe;}
+
+col.copções {background-color: #3737fc;}
+
+
