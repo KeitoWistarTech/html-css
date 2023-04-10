@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+*{margin: 0px; 
+  padding: 0px;
+  box-sizing: border-box;}
+
+body {background: 
+      url(Arquivos/astronauta.png) bottom 6% right 3% / 300px 300px fixed no-repeat,
+      url(Arquivos/espaco.jpg) center / 100% 100% fixed no-repeat;}
+
+header {background-color: black; 
+        color: white;}
+
+header h1 {text-align: center;
+           font-family: 'Audiowide', cursive;
+           margin: auto;}
+
+.textnormal {font-family: 'IBM Plex Sans', 
+             sans-serif;
+             font-weight: lighter;
+             background-image: linear-gradient(blue,white,yellow);
+             background-clip: text;
+             -webkit-background-clip: text;
+             color: transparent;
+             text-align: center;
+             margin-top: 10px;}
+
+nav {margin-left: 4px;}
+
+nav ul li {display: inline-block;
+           border: 4px outset blue;
+           width: 12.50%; height: 40px; line-height: 32px;
+           margin-left: -4px;
+           text-align: center;}
+
+nav ul li:hover {border: 4px dotted yellow;}
+
+nav ul li a {text-decoration: none;
+             font-size: 1.2em;
+             font-family: 'Oswald', sans-serif;}
+
+nav ul li a:hover {color: blue;
+                   text-decoration: none;}
+
+nav ul li a:visited {color: blue;}
+
+nav ul .saiba:hover {border: 4px dotted #00c900;}
+
+main {background-image: linear-gradient(white,
+      gray,blue,black);
+      max-width: 600px; 
+      min-width: 280px;
+      border-radius: 10px;
+      margin: auto; margin-top: 20px; margin-bottom: 20px;
+      padding: 10px;
+      text-align: justify;
+      box-shadow: 0px 0px 5px 5px gray;}
+
+h1 {background-color: black; color: white;
+    border-radius: 35px;
+    text-align: center;
+    margin: auto; margin-bottom: 10px;
+    max-width: 500px; min-width: 260px;
+    font-family: 'Faster One', cursive;
+    font-weight: lighter;}
+
+h3 {background-color: black; color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 280px; min-width: 250px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;}
+
+p {margin: 15px 0px 15px 0px;
+   font-family: 'IBM Plex Sans',sans-serif;}
+
+.pfinal {background-image: 
+         linear-gradient(to left,pink,blue,#ffc400);
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;}
+
+article > ul {background-color: #cfdfe6;
+              border-radius: 5px; 
+              border: 3px dotted black;
+              margin: 10px 0px 10px 0px;
+              padding: 10px 0px 0px 30px;
+              list-style: none;}
+
+article > ul > li {margin-bottom: 10px;}
+
+abbr {text-decoration: none;}
+
+div.fundow {background-image: url(fundo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: local;
+            max-width: 290px; height: 450px;
+            min-width: 260px;
+            margin: auto; 
+            position: relative;}
+
+img.óculos {position: absolute;
+            width: 150px;
+            top: 10%; left: 25%;}
+
+img.Univers {position: absolute;
+             width: 80px;
+             top: 5%; left: 15%;}
+
+img.polaroid {position: absolute;
+              top: -6%; left: -37%;
+              height: 505px;
+              max-width: 510px;
+              min-width: 250px;}
+
+p.pconteinor {text-align: justify;
+              position: absolute; 
+              top: 35%; left: 35%;
+              font-family: 'Grand Hotel', cursive;
+              font-size: 20px;}
+
+.foto {width: 100%;
+       max-width: 400px; 
+       margin: auto;
+       display: block; 
+       text-align: center;}
+    
+.conteiner {max-width: 500px;
+            margin: auto;}
+
+.divideo {position: relative;
+          width: 100%; 
+          padding-top: 75%; margin: 20px 0px 20px 0px;}
+
+.div-oficial {position: absolute;
+              width: 100%; height: 100%;
+              top: 0px;
+              box-shadow: 0px 0px 5px 5px white;}
+
+aside > ul {list-style: none;
+            columns: 2; 
+            list-style-position: inside;
+            padding-left: 100px;
+            color: white;}
+
+@media(max-width: 320px){aside > ul{display: inline-table; 
+                                    width: 100%;}}
+
+footer {background-image: 
+        linear-gradient(to left, black,blue,gray,blue, black);
+        font-family: 'IBM Plex Sans',sans-serif;}
+
+.pfooter {margin: 0px 0px 0px 0px;
+          padding: 10px; 
+          text-align: center;}
+
+.pfooter > a {text-decoration: none; 
+              color: red;
+              font-weight: bolder;}
+
+a:hover {color: black; 
+         text-decoration: underline;}

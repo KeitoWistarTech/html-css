@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrospace</title>
-
 <style>
 
 #container {width: 600px; 
@@ -28,6 +27,7 @@ main {background-color: blueviolet;
       margin: auto;   
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+      width: 100%;
       max-width: 500px;
       height: 1000px;}
 
@@ -35,7 +35,6 @@ main > header {background-color: blue;
                text-align: center;
                display: inline-block;
                border-top-left-radius: 10px;
-               margin: auto;
                border-top-right-radius: 10px;
                padding: 20px;}
 
@@ -43,11 +42,26 @@ main header a {color: black;
                margin: 50.6px;
                text-decoration: none;}
 
-@media (max-width: 500px){a{display: grid;
-                            grid-auto-flow: column;}}
+@media (max-width: 320px){a{display: grid;
+                            grid-auto-flow: column;}
+                            header{width: 86%;}}
 
 main header a:hover {color: aliceblue;}
 
+.p-abaixo {margin-top: 110px;}
+          
+#container2 {margin: auto; 
+             max-width: 600px; height: 360px;}
+
+div.area2 {position: relative;
+           background: url(Arquivos/espaco.jpg) center center / contain no-repeat;
+           width: 100%; height: 100%;}
+
+div.img2 {position: absolute;
+          background: url(Arquivos/astronauta.png) center center / contain no-repeat;
+          width: 50%; height: 70%; 
+          top: 50%; left: 40%;
+          transform: translate(-40% , -50%);}
 
 </style>
 
@@ -68,18 +82,28 @@ main header a:hover {color: aliceblue;}
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore tempora, architecto illo quae optio ullam perspiciatis nisi ipsa et delectus! Facilis quia veniam sint exercitationem soluta temporibus impedit numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero doloremque vel, magni ratione velit perferendis illum suscipit distinctio nesciunt neque iusto voluptatem fuga atque, dolores ea facilis laborum maxime?
 </p>
 
-<h1>Tenho que colocar esse astronauta dentro desta imagem</h1>
+<h2>Uma sobreposição de imagem amadora de mim iniciante</h2>
 
-    <div id="container">
-        <div class="space">
-            <img class="between" src="Arquivos/espaco.jpg">
-                <div class="astro">
-                    <img class="nauta" src="Arquivos/astronauta.png">
-                </div>
-        </div>
+<div id="container">
+    <div class="space">
+        <img class="between" src="Arquivos/espaco.jpg" alt="Fundo de espaço">
     </div>
+    <div class="astro">
+        <img class="nauta" src="Arquivos/astronauta.png" alt="astronauta no fundo de espaço">
+    </div>
+</div>
 
-<p>Consegui...</p>
+<p class="p-abaixo">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt repudiandae hic magni quam ex iste beatae exercitationem molestiae vel dolorem, culpa rerum illo consectetur odio eius iusto officia? Perferendis, aperiam?
+</p>
+
+<h2>Uma sobreposição de imagem amadora de mim muito veterana</h2>
+
+<div id="container2">
+    <div class="area2">
+        <div class="img2"></div>
+    </div>
+</div>
 
 </body>
 </html>

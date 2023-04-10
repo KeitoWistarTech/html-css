@@ -1,30 +1,29 @@
 @charset "utf-8";
 
-body {background-image: linear-gradient(blue,white,yellow,green,#2e0c0c);
+body {background-image: linear-gradient(black,blue,white);
       background-attachment: fixed;}
 
-h1#principal {background-color: white; color: black;
-              width: 30px; 
+h1#principal {background-color: #ffffff41; color: black;
+              max-width: 500px; 
+              text-align: center;
               padding: 10px; 
               margin: auto;}
               
-.subtitulo, .subtitulo2 {color: white; 
-                         text-shadow: 2px 2px 2px black;}
+.subtitulo {color: white;
+            text-shadow: 2px 2px 2px black;}
 
-h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 2px #00ff00;}
 
 p {text-align: justify; 
    text-indent: 20px;}
 
 h2 {font-family:  monospace;}
 
-.top1 {color: red;}
+.top1 , .top33 {color: red;}
 
-.top2{color:#ffd900}
+.top2 , .top22{color:#ffd900;}
 
-.top3{color: #012e01;
-      text-shadow: 2px 2px 2px white;}
+.top3 , .top11{color: #00ff00;}
 
-.top22 {color: white;}
-
-.top23 {color: #5858c0;}
+        
