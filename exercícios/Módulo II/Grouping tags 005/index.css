@@ -5,12 +5,10 @@ a {text-decoration: none; color: black;}
 *{margin: 0;
   padding: 0;}
 
-html, body {background-image:  linear-gradient(pink,yellow);
-            background-attachment: fixed;
-            height: 80vh;}
-
-body {display: flex;
-      flex-direction: column;}
+body {background-image:  linear-gradient(pink,yellow);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;}
 
 header {background-color: white; 
         text-align: center; 
@@ -26,10 +24,10 @@ nav a {padding-left: 5px;}
 
 nav a:hover {text-decoration: underline ;}
 
+div {flex-grow: 1;}
+
 main {background-color: bisque; 
       padding: 10px;
-      flex: auto;
-      margin-bottom: 500px;
       font-family: 'Gentium Book Plus', serif; box-shadow: 1px 1px 3px black;}
 
 h2 {padding-bottom: 10px;

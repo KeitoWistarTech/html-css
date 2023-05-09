@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela no iframe</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {background-image: linear-gradient(to right,#0c0cc2,#4d4df1,yellow);
+      background-attachment: fixed;
+      overflow-x: hidden;}
+
+h1 {font-family: dancing script, cursive;
+    text-align: center;}
+
+p {font-size: 1.2em;}
+
+li {font-size: 1.2em;}
+
+caption {border: 2px solid black;
+         border-bottom: none;
+         padding: 10px;
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: #f5f59e;}
+
+table {border: 2px solid black;
+       border-collapse: collapse;
+       background-color: white;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       max-width: 830px;
+       margin: auto;
+       position: relative;}
+
+@media(max-width: 400px){body{overflow-x: auto;}}
+
+tr:nth-child(2n){background-color: #aaa8a8;}
+
+th, td {border: 2px solid black;
+        padding: 10px;
+        height: 50px;
+        font-weight: lighter;
+        text-align: center;}
+
+thead, tfoot {background-color: red;}
+
+thead {position: sticky;
+       top: -1px;}
+
+</style>
+
+<body>
+
+<h1>Tabela com semântica</h1>  
+    
+<p>- Organizando o nome da minha família por parte de mãe e pai por ordem alfabética.</p>
+    
+<div>
+    <table>
+        <caption>Meus filmes em ordem de favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">ABC</th>
+                <th scope="col">Família Materna</th>
+                <th scope="col" class="total">Total nessa letra</th>
+                <th scope="col">Família Paterna</th> 
+                <th scope="col" class="total">Total dessa letra</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>-</th>
+                <th scope="row">Total de pessoas</th>
+                <td>51</td>
+                <th scope="row">Total de pessoas</th>
+                <td>29</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>Antônia, Antônio</td>
+                <td>2</td>
+                <td>Agnaldo, Ariel, Altair</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Bruna Juliana, Bruno, Benaia</td>
+                <td>3</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Caindo, Cristiane, Cristina, Clean</td>
+                <td>4</td>
+                <td>Ceiça, Célio</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Deusa, Débora</td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>Estevão, Esther, Elisa</td>
+                <td>3</td>
+                <td>Emily, Emannuely</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>Felipe</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Gabriel, Glenda</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>Helena</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>Íris, Ildeana, Ildeane, Ilda, Irinildes</td>
+                <td>5</td>
+                <td>Isac</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>José Vitor, João Machado, Jonnatan</td>
+                <td>3</td>
+                <td>Jennie</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>Keiti(eu), Kelvin, Karla Raqueline, Kemilly, Kamilla, Kennedy, Kalebe</td>
+                <td>7</td>
+                <td>Keiti(eu), Kelvin</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>Leonardo</td>
+                <td>1</td>
+                <td>Laenny, Louysi, Lohanny, Lauriceia, Lucas, Lázara, Luciano</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>Miquéias, Milton, Macdiel</td>
+                <td>3</td>
+                <td>Matheus, Melquisedeque, Maurício</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>Nelson, Novin</td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>P</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Q</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>Ramilda, Ramilla, Ravi, Rubens, Raul, Raquel</td>
+                <td>6</td>
+                <td>Raquel</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>Sílas, Samir, Socorro, Sully</td>
+                <td>4</td>
+                <td>Samuel, Sérgio</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>Tevi, Teresinha</td>
+                <td>2</td>
+                <td>Thiago</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>U</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Vando</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>W</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>Zioneide, Zuleide</td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

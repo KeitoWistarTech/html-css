@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 body {background-image: linear-gradient(to right,#0c0cc2,#4d4df1,yellow);
-      background-attachment: fixed;}
+      background-attachment: fixed;
+      overflow-x: hidden;}
 
 h1 {font-family: dancing script, cursive;}
 
@@ -9,36 +10,39 @@ p {font-size: 1.2em;}
 
 li {font-size: 1.2em;}
 
-.cor1 {background-color: #ffd000;}
-.cor2 {background-color: black; color: white;}
-.cor3 {background-color: pink;}
+.cor1 {background-color: #0000ff;}
+.cor2 {background-color: #000097; color: white;}
+.cor3 {background-color: #000036; color: white;}
+
+.linhac1:hover {background-color: #0000ff;}
+.linhac2:hover {background-color: #000097; color: white;}
+.linhac3:hover {background-color: #000036; color: white;}
 
 caption {background-color: #f5f59e;
          padding: 10px;
          font-weight: bolder;
-         width: 770px; 
+         max-width: 806px;
          border: 2px solid black;
          border-bottom: none;
          font-family: Arial, Helvetica, sans-serif;}
-         
-div#container {overflow-x: auto;}
 
 table {border: 2px solid black;
        margin: auto;
        background-color: bisque;
        border-collapse: collapse;
        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-       width: 45%;}
+       width: 100%; max-width: 830px;}
 
-thead > tr > th {position: sticky;
-                 top: -1px;
-                 background-color: red;}
+.table1 {position: relative;}
+
+thead {position: sticky;
+       top: -1px;
+       background-color: #fff;}
+
+@media (max-width: 320px){#container{overflow-x: auto;}}
 
 .filmes {height: 20px; 
          background-color: red; color: white;}
-
-.table2 {width: 48%;
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 .total {width: 50px;}
 
@@ -47,10 +51,6 @@ td {border: 2px solid black;
     text-align: center;
     padding: 10px;}
 
-.linhac1:hover {background-color: #ffd000;}
-.linhac2:hover {background-color: black; color: white;}
-.linhac3:hover {background-color: pink;}
-
 th {font-weight: lighter;
     padding: 10px;
     border: 2px solid black;}
@@ -58,7 +58,6 @@ th {font-weight: lighter;
 tr {height: 80px;}
 
 thead, tfoot {background-color: red;
-              color: white;
-              height: 80px;}
+              color: white;}
 
-tbody > tr:nth-child(2n){background-color: #aaa8a8;}
+tr:nth-child(2n){background-color: #aaa8a8;}

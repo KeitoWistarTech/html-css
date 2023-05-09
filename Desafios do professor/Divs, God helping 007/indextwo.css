@@ -15,7 +15,7 @@ header h1 {text-align: center;
            font-family: 'Audiowide', cursive;
            margin: auto;}
 
-.textnormal {font-family: 'IBM Plex Sans', 
+.textnormal {font-family: 'IBM Plex Sans',
              sans-serif;
              font-weight: lighter;
              background-image: linear-gradient(blue,white,yellow);
@@ -25,12 +25,12 @@ header h1 {text-align: center;
              text-align: center;
              margin-top: 10px;}
 
-nav {margin-left: 4px;}
+nav {margin-left: 8px;}
 
 nav ul li {display: inline-block;
            border: 4px outset blue;
-           width: 12.50%; height: 40px; line-height: 32px;
            margin-left: -4px;
+           width: 12.50%;
            text-align: center;}
 
 nav ul li:hover {border: 4px dotted yellow;}
@@ -46,23 +46,32 @@ nav ul li a:visited {color: blue;}
 
 nav ul .saiba:hover {border: 4px dotted #00c900;}
 
+@media (max-width: 500px){nav ul li{width: 100%;}}
+
 main {background-image: linear-gradient(white,
       gray,blue,black);
-      max-width: 600px; 
-      min-width: 280px;
+      max-width: 600px;
+      min-width: 260px;
       border-radius: 10px;
       margin: auto; margin-top: 20px; margin-bottom: 20px;
       padding: 10px;
       text-align: justify;
       box-shadow: 0px 0px 5px 5px gray;}
 
+@media (max-width: 320px){main{margin-left: 10px;margin-right: 10px;}}
+
 h1 {background-color: black; color: white;
     border-radius: 35px;
     text-align: center;
-    margin: auto; margin-bottom: 10px;
+    margin: auto; margin-bottom: 15px;
     max-width: 500px; min-width: 260px;
     font-family: 'Faster One', cursive;
     font-weight: lighter;}
+
+h2 {font-family: 'Oswald', sans-serif; 
+    font-weight: lighter;
+    padding-left: 10px;
+    color: white;}
 
 h3 {background-color: black; color: white;
     border-radius: 15px;
@@ -73,7 +82,10 @@ h3 {background-color: black; color: white;
     font-weight: lighter;}
 
 p {margin: 15px 0px 15px 0px;
+   text-indent: 20px;
    font-family: 'IBM Plex Sans',sans-serif;}
+
+.p-diferent {color: white;}
 
 .pfinal {background-image: 
          linear-gradient(to left,pink,blue,#ffc400);
@@ -81,10 +93,16 @@ p {margin: 15px 0px 15px 0px;
          -webkit-background-clip: text;
          color: transparent;}
 
+.foto {width: 100%;
+       max-width: 400px; 
+       margin: auto;
+       display: block; 
+       text-align: center;}
+
 article > ul {background-color: #cfdfe6;
               border-radius: 5px; 
               border: 3px dotted black;
-              margin: 10px 0px 10px 0px;
+              margin: 15px 0px 15px 0px;
               padding: 10px 0px 0px 30px;
               list-style: none;}
 
@@ -92,62 +110,60 @@ article > ul > li {margin-bottom: 10px;}
 
 abbr {text-decoration: none;}
 
-div.fundow {background-image: url(fundo.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: local;
-            max-width: 290px; height: 450px;
-            min-width: 260px;
-            margin: auto; 
-            position: relative;}
+.container {display: block;
+             margin: auto;
+             width:321px; height: 457px;}
 
-img.óculos {position: absolute;
-            width: 150px;
-            top: 10%; left: 25%;}
+.area2 {position: relative;
+        background: url(Arquivos/polaroid.png) center center / contain no-repeat;
+        width: 100%; height: 100%;}
 
-img.Univers {position: absolute;
-             width: 80px;
-             top: 5%; left: 15%;}
+.oculos {position: absolute;
+         background: url(Arquivos/oculos.png) center center / contain no-repeat;
+         width: 30%; height: 30%;
+         top: -2%; left: 25%;
+         transform: translate(-25% , -2%);}
 
-img.polaroid {position: absolute;
-              top: -6%; left: -37%;
-              height: 505px;
-              max-width: 510px;
-              min-width: 250px;}
+.space {position: absolute;
+           background: url(Arquivos/universo.png) center center / contain no-repeat;
+           width: 28%; height: 28%;
+           top: 70%; left: 80%; 
+           transform: translate(-80% , -70%);}
 
-p.pconteinor {text-align: justify;
-              position: absolute; 
-              top: 35%; left: 35%;
-              font-family: 'Grand Hotel', cursive;
-              font-size: 20px;}
+.ppola {position: absolute;
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%, -32%);
+        top: 32%; left: 50%;}
 
-.foto {width: 100%;
-       max-width: 400px; 
-       margin: auto;
-       display: block; 
-       text-align: center;}
+.ppola  > p {font-weight: bold;}
+
+@media (max-width: 320px){.area2{width: 80%; height: 80%;}
+                                .container{margin-bottom: -90px;}
+                                        .ppola{top: 30%;transform: translate(-50%, -30%);}}
     
-.conteiner {max-width: 500px;
-            margin: auto;}
+.container1 {max-width: 500px;
+             margin: auto;}
 
 .divideo {position: relative;
           width: 100%; 
-          padding-top: 75%; margin: 20px 0px 20px 0px;}
+          padding-bottom: 56.75%; margin: 20px 0px 20px 0px;}
 
-.div-oficial {position: absolute;
+.vid-oficial {position: absolute;
               width: 100%; height: 100%;
               top: 0px;
+              background-color: black;
               box-shadow: 0px 0px 5px 5px white;}
 
-aside > ul {list-style: none;
-            columns: 2; 
-            list-style-position: inside;
-            padding-left: 100px;
-            color: white;}
+.list2 {display: flex;
+        justify-content: center;}
 
-@media(max-width: 320px){aside > ul{display: inline-table; 
-                                    width: 100%;}}
+.list2 > ul {list-style: none;
+             columns: 2; 
+             list-style-position: inside;
+             color: white;}
+
+@media (max-width: 320px){.list2 > ul{display: inline-table;}}
 
 footer {background-image: 
         linear-gradient(to left, black,blue,gray,blue, black);

@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body {background-color: #4c00ff;}
+
+p {color: white;
+   font-size: 1.2em;}
+
+iframe {outline: 2px outset #000000;
+        box-shadow: 0px 0px 10px 8px #00b7ff;
+        width: 30%; height: 400px;
+        display: block;
+        margin: auto;}
