@@ -9,7 +9,8 @@
 
 body {background-image: 
       linear-gradient(to top,black,#02025f,blue,#3636fc);
-      background-attachment: fixed;}
+      background-attachment: fixed;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 header {background-color: #4f4ffa;  
         text-align: center; 
@@ -49,13 +50,15 @@ main p {margin-top: 10px;
         text-align: justify;}
 
 main h1 {background-color: var(--uniao); 
+         color: white;
          text-align: center;
-         padding-left: 10px; padding-right: 10px;
-         max-width: 280px;
+         padding: 5px;
+         max-width: 350px;
          border-radius: 15px;}
 
 main h2 {background-color: var(--h2); 
          text-align: center; 
+         padding: 5px;
          border-radius: 15px;}
 
 h3 {background-color: var(--h2); 

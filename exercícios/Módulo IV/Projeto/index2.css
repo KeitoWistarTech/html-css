@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body, html {margin: 0;
+            padding: 0;}
+
+body {background: url(Imagens/Aconchego.jpg) center center / cover fixed no-repeat ;}
+
+main {position: relative;
+      height: 100vh;}
+
+section#iphone {background: url(Imagens/iphone.png) center center / contain no-repeat ;
+                position: absolute;
+                width: 248px;
+                height: 500px;
+                display: grid;
+                place-items: center;
+                margin: auto;
+                text-align: center;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%)}
+
+.in-the-phone {width: 210px;
+               height: 373px;
+               border: 0;}
+
+.logos {position: absolute;
+        top: 50%; left: 98%;
+        transform: translate(-98%, -50%);}
+
+a {display: flex;
+   padding-top: 40px;
+   align-items: right;
+   justify-content: right;}
+
+img {max-width: 70px;
+     height: 70px;
+     border-radius: 40px;
+     box-shadow: 2px 2px 5px blue;}
+
+img:hover {box-shadow: 1px 1px 10px 10px blue;
+           outline: 3px solid white;}

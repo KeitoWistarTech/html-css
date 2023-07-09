@@ -2,7 +2,8 @@
 
 body {background-image: linear-gradient(to right,#0c0cc2,#4d4df1,yellow);
       background-attachment: fixed;
-      overflow-x: hidden;}
+      overflow-x: hidden;
+      font-family: Arial, Helvetica, sans-serif;}
 
 h1 {font-family: dancing script, cursive;}
 

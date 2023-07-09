@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+html, body {margin: 0;
+            padding: 0;}
+
+body {background: url(Imagens/night.jpg) center center / cover fixed no-repeat;}
+
+main {height: 100vh;
+      position: relative;}
+
+section#iphone {background: url(Imagens/iphone.png) center center / contain no-repeat;
+                border: 0;
+                width: 248px;
+                height: 500px;
+                position: absolute;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%);}
+
+.in-the-iphone {position: absolute;
+                top: 12.75%; left: 7%;
+                width: 210px;
+                height: 373px;}
+
+section.logos {position: absolute;
+               top: 50%; left: 98%;
+               transform: translate(-98%, -50%);}
+
+a {display: flex;
+   justify-content: right;
+   align-items: right;
+   padding-top: 40px;}
+           
+img {max-width: 70px;
+     height: 70px;
+     border-radius: 40px;
+     box-shadow: 2px 2px 5px white;}
+
+img:hover {outline: 3px solid white;
+           box-shadow: 1px 1px 10px 10px blue;}

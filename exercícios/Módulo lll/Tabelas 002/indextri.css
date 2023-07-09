@@ -1,7 +1,8 @@
 *{margin: 0;
   padding: 0;}
 
-body {background-image: linear-gradient(to right, blue,yellow);}
+body {background-image: linear-gradient(to right, blue,yellow);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 div#container {overflow-x: auto;
                display: grid;
