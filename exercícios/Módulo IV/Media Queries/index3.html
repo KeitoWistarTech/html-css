@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media features vol II</title>
+<style>
+
+html {width: 100vw; height: 100vh;}
+
+h1{background: linear-gradient(to right,#00ff80,pink,red);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+@media screen and (orientation: landscape){html{background: url(imagens/cev-landscape.jpg);
+                                                max-width: 1280px; max-height: 720px;
+                                                background-position: left bottom;
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-color: #233eff;}}
+
+@media screen and (orientation: portrait){html{background: url(imagens/cev-portrait.jpg);
+                                               max-width: 720px; max-height: 1280px;
+                                               min-width: 300px;
+                                               background-position: center center;
+                                               background-size: contain;
+                                               background-repeat: no-repeat;
+                                               background-color: #233eff;}}
+
+</style>
+</head>
+<body>
+
+<h1>Ajustando imagens de acordo com a orientação da tela</h1>
+    
+</body>
+</html>

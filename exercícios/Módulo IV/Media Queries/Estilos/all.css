@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+html {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: pink;
+      width: 100vw;
+      height: 100vh;}
+
+h1 {text-align: center;
+    background: linear-gradient(to right,#6e016e,#e02ec3,#00d471,#3535ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;}

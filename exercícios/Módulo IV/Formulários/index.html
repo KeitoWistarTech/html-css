@@ -34,46 +34,233 @@
 <h2>Formulário de cadastro</h2>
 
 <form action="cadastro.php" method="post" autocomplete="on">
-    <p>
-        <label for="inome">Nome:</label> 
-        <input type="text" name="nome" id="inome" autocomplete="username">
-    </p>
-    <p>
-        <label for="isobrenome">Sobrenome:</label> 
-        <input type="text" name="sobrenome" id="isobrenome" required>
-    </p>
-    <p>
-        <label for="idade">Idade:</label>
-        <input type="number" name="age" id="idade" min="18" max="150"> 
-    </p>
-    <p>
-        <label for="inasce">Data de nascimento:</label>
-        <input type="date" name="nasce" id="inasce" required>
-    </p>
-    <p>
-        <label for="isenha">Senha:</label>
-        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="25">
-    </p>    
-    <p>
-        <label for="iprova">Data da prova:</label>
-        <input type="date" name="prova" id="iprova" required>
-    </p>
-    <p>
-        <label for="imedia">Nota da prova:</label>
-        <input type="number" name="media" id="imedia" placeholder="0 a 1" required>
-    </p>
-    <p>
-        <label for="iperiodo">Período letivo:</label>
-        <input type="month" name="periodo" id="iperiodo" required>
-    </p>
-    <p>
-        <label for="ihorario">Horário da prova</label>
-        <input type="time" name="horario" id="ihorario" required>
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-    </p>   
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" autocomplete="username">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" required autocomplete="username">
+        </p>
+        <p>
+            <label for="idade">Idade:</label>
+            <input type="number" name="age" id="idade" min="18" max="150" autocomplete="off">
+        </p>
+        <p>
+            <label for="inasce">Data de nascimento:</label>
+            <input type="date" name="nasce" id="inasce" required autocomplete="on">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="25" autocomplete="off">
+        </p>
+        <p>
+            <label for="iprova">Data da prova:</label>
+            <input type="date" name="prova" id="iprova" required autocomplete="on">
+        </p>
+        <p>
+            <label for="imedia">Nota da prova:</label>
+            <input type="number" name="media" id="imedia" placeholder="0 a 1" required autocomplete="off">
+        </p>
+        <p>
+            <label for="iperiodo">Período letivo:</label>
+            <input type="month" name="periodo" id="iperiodo" required autocomplete="off">
+        </p>
+        <p>
+            <label for="ihorario">Horário da prova</label>
+            <input type="time" name="horario" id="ihorario" required autocomplete="on">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </fieldset>  
 </form>
-    
+
+<h2>Formulário de cadastro vol II</h2>
+
+<form action="cadastro.php" method="post" autocomplete="on">
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required autocomplete="on">
+        </p>
+        <p>
+            <label for="itel">telefone:</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" size="10" required autocomplete="on">
+        </p>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Entrar">
+    </fieldset>
+</form>
+
+<br>
+
+<form action="cadastro.php" method="post">
+    <fieldset>
+        <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="basquete" id="ibasquete">
+        <label for="">Basquete</label><br>
+            <input type="checkbox" name="volei" id="ivolei">
+        <label for="">Vôlei</label><br>
+            <input type="checkbox" name="tenis" id="itenis">
+        <label for="">Tênis</label><br>
+            <input type="checkbox" name="golfe" id="igolfe">
+        <label for="checkbox">Golfe</label><br>
+            <input type="checkbox" name="futebol" id="ifutebol">
+        <label for="">Futebol</label><br>
+            <input type="checkbox" name="ping" id="iping">
+        <label for="">Ping-pong</label><br>
+            <input type="checkbox" name="ginastica" id="iginastica">
+        <label for="">Ginástica</label><br>
+            <input type="checkbox" name="nataçao" id="inataçao">
+        <label for="">Natação</label><br>
+            <input type="checkbox" name="baseball" id="ibaseball">
+        <label for="">Baseball</label><br><br>
+
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Entrar">
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Sexo</legend>
+        <label for="isxmas">Masculino</label>
+            <input type="radio" name="Sexo" id="isxmas" checked>
+        <label for="isxfem">Feminino</label>
+            <input type="radio" name="Sexo" id="isxfem">
+    </fieldset><br>
+</form>
+
+<form action="cadastro.php" method="post">
+    <fieldset>
+        <legend>Exemplos de formulários</legend>
+        <p>
+            <label for="icor">COR:</label>
+            <input type="color" name="color" id="icor" value="#FF0000">
+        </p>
+        <p>
+            <label for="irange">Nível de satisfação:</label>
+            <input type="range" name="range" id="irange" min="0" max="10" value="5">
+        </p>
+        <p>
+            <label for="ifile">Foto de perfil</label>
+            <input type="file" name="file" id="ifile">
+        </p>
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <option value="">-------Escolher Estado-------</option>
+                <optgroup label="Regiões Centro-Oeste">
+                    <option value="">Distrito Federal(DF)</option>
+                    <option value="">Goiás(GO)</option>
+                    <option value="">Mato Grosso(MT)</option>
+                    <option value="">Mato Grosso do Sul(MS)</option>
+                </optgroup>
+                <optgroup label="Regiões Norte">
+                    <option value="">Acre(AC)</option>
+                    <option value="">Amapá(AP)</option>
+                    <option value="">Amazonas(AM)</option>
+                    <option value="">Pará(PA)</option>
+                    <option value="">Rondônia(RO)</option>
+                    <option value="">Roraima(RR)</option>
+                    <option value="">Tocantins(TO)</option>
+                </optgroup>
+                <optgroup label="Regiões Nodeste">
+                    <option value="">Alagoas(AL)</option>
+                    <option value="">Bahia(BA)</option>
+                    <option value="">Ceará(CE)</option>
+                    <option value="">Maranhão(MA)</option>
+                    <option value="">Paraíba(PB)</option>
+                    <option value="">Pernambuco(PE)</option>
+                    <option value="">Piauí(PI)</option>
+                    <option value="">Rio Grande do Norte(RN)</option>
+                    <option value="">Sergipe(SE)</option>
+                </optgroup>
+                <optgroup label="Regiões Sudestes">
+                    <option value="">Espírito Santo(ES)</option>
+                    <option value="">Minas Gerais(MG)</option>
+                    <option value="">Rio de Janeiro(RJ)</option>
+                    <option value="">São Paulo(SP)</option>
+                </optgroup>
+                <optgroup label="Regiões Sul">
+                    <option value="">Paraná(PR)</option>
+                    <option value="">Rio grande do Sul(RS)</option>
+                    <option value="">Santa Catarina(SC)</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Desenvolvedora WEB</option>
+                <option>Atendente</option>
+                <option>Servidor Público</option>
+                <option>Farmacêutico</option>
+                <option>Cozinheiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="5"></textarea>
+        </p>
+    </fieldset><br>
+</form>
+
+<form action="cadastro.php" method="post">
+    <fieldset>
+        <legend>Formulário com soma</legend>
+        <p>
+            <label for="isoma">1°Valor:</label>
+            <input type="number" name="soma" id="valor1" oninput="isoma.innerHTML = Number(valor1.value)+Number(valor2.value)"><br><br>
+        </p>
+        <p>
+            <label for="isoma">2°Valor:</label>
+            <input type="number" name="soma" id="valor2" oninput="isoma.innerHTML = Number(valor1.value)+Number(valor2.value)"><br><br>
+        </p>
+        <p>
+            <label for="isoma">Resultado da soma:</label>
+            <output name="soma" id="isoma">n</output>
+        </p>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Onde estar o Range?</legend>
+            <p>
+                <label for="irange">Nível de satisfação:</label>
+                <input type="range" name="range" id="irange" min="0" max="100" value="50" oninput="count.innerHTML = Number(irange.value)">
+                <output id="count">50</output>
+            </p>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Idade pelo ano</legend>
+        <p>
+            <label for="iano">Ano em que você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" value="2000" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iage">Sua idade é:</label>
+            <output id="iage">23</output>
+        </p>
+
+    </fieldset>
+</form>
+
+<script>
+    function calcIdade() {let atual = new Date().getFullYear(); iage.innerHTML = Number(atual) - Number(iano.value);}
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+

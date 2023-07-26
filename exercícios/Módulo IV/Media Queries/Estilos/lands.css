@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+@media (max-width: 1024px){html{background-color: yellow;}
+                                h1{background: linear-gradient(to right,blue 25%,red 75%);
+                                   -webkit-background-clip: text;
+                                   background-clip: text;
+                                   color: transparent;}}
