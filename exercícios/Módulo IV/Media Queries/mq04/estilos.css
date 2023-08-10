@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
+@media print {body {background: url(Imagens/back-print.jpg);
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 1em;}
+
+img#tv {display: none;}
+img#phone {display: none;}
+img#tablet {display: none;}
+img#print {display: block;}
+img#pc {display: none;}
+
+main {border: solid 2px black;}
+
+main h1 {color: black;
+         text-shadow: none;}
+
+main::after {content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+             text-decoration: overline;}}
+
+@media screen and (min-width: 768px){body{background: url(Imagens/back-tablet.jpg) center center / cover fixed no-repeat;}
+
+img#tv {display: none;}
+img#phone {display: none;}
+img#tablet {display: block;}
+img#print {display: none;}
+img#pc {display: none;}}
+
+@media screen and (min-width: 900px){body{background: url(Imagens/back-pc.jpg) center center / cover fixed no-repeat}
+
+img#tv {display: none;}
+img#phone {display: none;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#pc {display: block;}}
+
+@media screen and (min-width: 1050px){body{background: url(Imagens/back-tv.jpg) center center / cover fixed no-repeat;}
+
+img#tv {display: none;}
+img#phone {display: none;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#pc {display: block;}}
+
+
+
+
+
+
+
+
+
+
+                   
