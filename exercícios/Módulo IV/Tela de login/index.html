@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login responsivo</title>
+    <style>
+
+    :root {--azul: #090126;
+           --azulM: #0A04BF;
+           --verde: #0BD93E;
+           --laran: #F26800;
+           --amare: #FFB30D;}
+
+    *{margin: 0;
+      padding: 0;
+      box-sizing: border-box;}
+
+    html, body {background-image: linear-gradient(to top,#090126 20%,#0A04BF,#0BD93E);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;}
+
+    section#login {background-color: var(--amare);
+                   width: 250px;
+                   height: 500px;
+                   border-radius: 20px;
+                   position: relative;}
+
+    img {position: absolute;
+         width: 250px;
+         height: 200px;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;}
+
+    #form {position: absolute;
+           top: 60%; left: 15%;}
+
+    
+
+    </style>
+</head>
+<body>
+
+<main>
+    <section id="login">
+
+        <div>
+            <img src="Imagens/not.jpg">
+        </div>
+
+        <div id="form">
+            <form action="login.php" method="post">
+                <p>
+                    <label for="iusu">Usuário:</label>
+                    <input type="text" name="usuario" id="iusu">
+                </p>
+                <p>
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha">
+                </p>
+                <p>
+                    <input type="submit" value="Entrar">
+                </p>
+            </form>
+        </div>
+
+    </section>
+</main>
+    
+</body>
+</html>
