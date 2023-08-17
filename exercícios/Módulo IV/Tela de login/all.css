@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+:root {--azul: #090126;
+       --azulM: #0A04BF;
+       --verde: #0BD93E;
+       --laran: #F26800;
+       --amare: #FFB30D;}
+
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+html, body {background-image: linear-gradient(to top,#090126 20%,#0A04BF,#0BD93E);
+            width: 100vw;
+            height: 100vh;}
+        
+main {position: relative;
+      height: 100vh;
+      width: 100vw;}
+
+section#login {background-color: var(--amare);
+               position: absolute;
+               top: 50%; left: 50%;
+               transform: translate(-50%, -50%);
+               width: 250px;
+               height: 500px;
+               border-radius: 20px;
+               transition: width 2s, height 2s;
+               /**transition-timing-function: ease;**/}
+
+div#img {background: url(Imagens/not.jpg) no-repeat left bottom / cover;
+         height: 200px;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;}
+         
+section#login > div#form {display: block;
+                          padding: 10px;}
+
+h1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.6em;
+    margin-top: -5px; margin-bottom: 5px; }
+
+p {margin-bottom: 5px;
+   text-align: center;}
+
+.usua, .senha {background-color: #090126;
+               border-radius: 30px;
+               height: 40px;
+               margin-bottom: 5px;}
+
+#iusua, #isenha {height: 85%;
+                 border-radius: 6px;
+                 font-size: 1em;
+                 width: calc(100% - 56px);
+                 transform: translateY(-12px);
+                 border-top-right-radius: 20px;
+                 border-bottom-right-radius: 20px;}
+
+#icons {color: bisque;
+        font-size: 35px;
+        padding: 2px 36px 5px 12px;
+        width: 40px;}
+
+div.entrar > input[type=submit] {display: block;
+                                 font-size: 1em;
+                                 width: 100%;
+                                 height: 40px;
+                                 background-color: #F26800;
+                                 border-radius: 30px;
+                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                 font-weight: bold;
+                                 color: white;
+                                 text-shadow: 2px 2px 2px #090126;}
+                        
+a.botao {display: block;
+         font-size: 1em;
+         text-align: center;
+         margin-top: 5px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight: bolder;
+         color: #090126;
+         text-decoration: none;}
+
+
+
+
+
+           
